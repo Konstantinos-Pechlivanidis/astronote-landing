@@ -54,22 +54,22 @@ export default function Landing() {
     {
       icon: 'sms',
       title: 'Send SMS Campaigns',
-      description: 'Reach customers instantly with targeted SMS messages that convert. 98% open rates and instant delivery.',
+      description: 'Reach customers instantly with targeted SMS messages. 98% open rates and instant delivery mean your messages get seen.',
     },
     {
       icon: 'automation',
       title: 'Automate Workflows',
-      description: 'Set up automated messages for orders, birthdays, abandoned carts, and more. Save time while increasing engagement.',
+      description: 'Set up automated messages for orders, birthdays, and customer events. Save time while increasing engagement.',
     },
     {
       icon: 'analytics',
       title: 'Track Results',
-      description: 'See delivery rates, opens, clicks, and conversions in real-time. Make data-driven decisions.',
+      description: 'See delivery rates, opens, clicks, and conversions in real-time. Make data-driven decisions to improve performance.',
     },
     {
       icon: 'segment',
       title: 'Audience Segmentation',
-      description: 'Target the right customers with advanced segmentation based on behavior, preferences, and purchase history.',
+      description: 'Target the right customers with segmentation based on behavior, preferences, and purchase history.',
     },
   ];
 
@@ -77,12 +77,12 @@ export default function Landing() {
     {
       icon: 'integration',
       title: 'Shopify Integration',
-      description: 'Seamlessly sync with your Shopify store. Customer data, orders, and products—all automatic.',
+      description: 'Seamlessly sync with your Shopify store. Customer data, orders, and products sync automatically.',
     },
     {
       icon: 'store',
       title: 'Storefront Opt-in',
-      description: 'Beautiful, customizable SMS opt-in forms that integrate seamlessly with your store theme.',
+      description: 'Customizable SMS opt-in forms that integrate with your store theme. Collect phone numbers directly from your storefront.',
     },
     {
       icon: 'campaign',
@@ -100,7 +100,7 @@ export default function Landing() {
     {
       icon: 'nfc',
       title: 'NFC Tags',
-      description: 'Physical NFC tags for in-store opt-ins and visit confirmations. Connect online and offline experiences.',
+      description: 'Physical NFC tags for in-store opt-ins and visit confirmations. Connect online and offline customer experiences.',
     },
     {
       icon: 'connect',
@@ -115,7 +115,7 @@ export default function Landing() {
     {
       icon: 'target',
       title: 'Location-Based',
-      description: 'Target customers based on store location and visit history. Personalize at scale.',
+      description: 'Target customers based on store location and visit history. Personalize messages at scale.',
     },
   ];
 
@@ -150,12 +150,7 @@ export default function Landing() {
       '@type': 'Offer',
       price: '0',
       priceCurrency: 'EUR',
-      description: 'Free trial available',
-    },
-    aggregateRating: {
-      '@type': 'AggregateRating',
-      ratingValue: '4.8',
-      reviewCount: '150',
+      description: 'SMS Marketing Platform',
     },
   };
 
@@ -179,69 +174,68 @@ export default function Landing() {
       />
       <main className="min-h-screen">
         {/* Hero Section */}
-        <section className="relative pt-36 pb-24 px-4 lg:px-8 overflow-hidden" aria-label="Hero section">
-          {/* Background gradient with blobs */}
+        <section className="relative pt-24 sm:pt-32 md:pt-36 pb-16 sm:pb-20 md:pb-24 px-4 sm:px-6 lg:px-8 overflow-hidden" aria-label="Hero section">
           <div className="absolute inset-0 bg-gradient-to-b from-bg-dark via-surface-dark to-bg-dark">
-            <div className="absolute top-20 right-20 w-96 h-96 bg-ice-accent/10 rounded-full blur-3xl animate-float" />
-            <div className="absolute bottom-20 left-20 w-96 h-96 bg-zoom-fuchsia/10 rounded-full blur-3xl animate-float" style={{ animationDelay: '2s' }} />
+            <div className="absolute top-10 sm:top-20 right-10 sm:right-20 w-64 h-64 sm:w-96 sm:h-96 bg-ice-accent/10 rounded-full blur-3xl animate-float" />
+            <div className="absolute bottom-10 sm:bottom-20 left-10 sm:left-20 w-64 h-64 sm:w-96 sm:h-96 bg-cyan-accent/10 rounded-full blur-3xl animate-float" style={{ animationDelay: '2s' }} />
           </div>
 
           <div className="relative max-w-[1200px] mx-auto">
-            <div className="text-center mb-16">
-              <GlassBadge variant="ice" className="mb-6 inline-flex items-center gap-2">
+            <div className="text-center mb-12 sm:mb-16">
+              <GlassBadge variant="ice" className="mb-4 sm:mb-6 inline-flex items-center gap-2 text-xs sm:text-sm">
                 <Icon name="sms" size="sm" variant="ice" />
                 <span>SMS Marketing That Converts</span>
               </GlassBadge>
               
-              <h1 className="text-hero md:text-7xl font-bold mb-6 leading-tight">
+              <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-4 sm:mb-6 leading-tight px-2">
                 <span className="block mb-2">Grow Your Business with</span>
                 <GradientText>Astronote SMS</GradientText>
               </h1>
               
-              <p className="text-xl md:text-2xl text-border-subtle max-w-3xl mx-auto mb-4 leading-relaxed">
+              <p className="text-lg sm:text-xl md:text-2xl text-border-subtle max-w-3xl mx-auto mb-3 sm:mb-4 leading-relaxed px-4">
                 <strong className="text-primary-light">Two powerful solutions</strong> for 
                 <span className="text-ice-accent"> Shopify stores</span> and 
-                <span className="text-zoom-fuchsia"> retail businesses</span>. 
+                <span className="text-cyan-accent"> retail businesses</span>. 
                 Reach customers instantly, drive sales, and grow faster.
               </p>
 
-              <p className="text-lg text-border-subtle max-w-2xl mx-auto mb-10">
+              <p className="text-base sm:text-lg text-border-subtle max-w-2xl mx-auto mb-6 sm:mb-10 px-4">
                 Connect with customers where they spend most of their time—their phones. 
                 98% open rates. Instant delivery. Better conversions.
               </p>
               
-              <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
+              <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center mb-8 sm:mb-12 px-4">
                 <GlassButton 
                   variant="primary" 
                   size="lg" 
                   href={`${SHOPIFY_APP_URL}/shopify`}
                   className="group w-full sm:w-auto"
                 >
-                  <span className="flex items-center gap-2">
+                  <span className="flex items-center justify-center gap-2">
                     For Shopify Stores
                     <Icon name="arrowRight" size="sm" className="group-hover:translate-x-1 transition-transform" />
                   </span>
                 </GlassButton>
                 <GlassButton 
-                  variant="fuchsia" 
+                  variant="cyan" 
                   size="lg" 
                   href={`${RETAIL_APP_URL}/retail`}
                   className="group w-full sm:w-auto"
                 >
-                  <span className="flex items-center gap-2">
+                  <span className="flex items-center justify-center gap-2">
                     For Retail Businesses
                     <Icon name="arrowRight" size="sm" className="group-hover:translate-x-1 transition-transform" />
                   </span>
                 </GlassButton>
               </div>
               
-              <div className="flex flex-wrap justify-center gap-6 text-sm text-border-subtle">
+              <div className="flex flex-wrap justify-center gap-4 sm:gap-6 text-xs sm:text-sm text-border-subtle px-4">
                 <div className="flex items-center gap-2">
                   <Icon name="check" size="sm" variant="ice" />
                   <span>Free trial available</span>
                 </div>
                 <div className="flex items-center gap-2">
-                  <span className="text-zoom-fuchsia font-bold">98%</span>
+                  <span className="text-cyan-accent font-bold">98%</span>
                   <span>open rates</span>
                 </div>
                 <div className="flex items-center gap-2">
@@ -254,26 +248,26 @@ export default function Landing() {
         </section>
 
         {/* Results Section */}
-        <section className="py-20 px-4 lg:px-8 bg-surface-dark/30">
+        <section className="py-12 sm:py-16 md:py-20 px-4 sm:px-6 lg:px-8 bg-surface-dark/30">
           <div className="max-w-[1200px] mx-auto">
-            <div className="text-center mb-12">
-              <h2 className="text-h1 font-bold mb-4">Why SMS Marketing Works</h2>
-              <p className="text-lg text-border-subtle max-w-2xl mx-auto">
+            <div className="text-center mb-8 sm:mb-12">
+              <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-3 sm:mb-4">Why SMS Marketing Works</h2>
+              <p className="text-base sm:text-lg text-border-subtle max-w-2xl mx-auto px-4">
                 SMS delivers results that email can't match. Here's what you can expect.
               </p>
             </div>
             
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 sm:gap-8">
               {results.map((result, index) => (
-                <GlassCard key={index} className="text-center p-8 group hover:scale-[1.02] transition-all duration-300">
+                <GlassCard key={index} className="text-center p-6 sm:p-8 group hover:scale-[1.02] transition-all duration-300">
                   <div className="flex justify-center mb-4">
                     <div className="p-3 rounded-xl bg-ice-accent/20 group-hover:bg-ice-accent/30 transition-colors">
                       <Icon name={result.icon} size="lg" variant="ice" />
                     </div>
                   </div>
-                  <div className="text-5xl font-bold text-zoom-fuchsia mb-3">{result.number}</div>
-                  <h3 className="text-h3 font-semibold mb-2">{result.label}</h3>
-                  <p className="text-body text-border-subtle">{result.description}</p>
+                  <div className="text-4xl sm:text-5xl font-bold text-ice-accent mb-3">{result.number}</div>
+                  <h3 className="text-xl sm:text-2xl font-semibold mb-2">{result.label}</h3>
+                  <p className="text-sm sm:text-base text-border-subtle">{result.description}</p>
                 </GlassCard>
               ))}
             </div>
@@ -281,29 +275,27 @@ export default function Landing() {
         </section>
 
         {/* Shopify Product Section */}
-        <section className="py-20 px-4 lg:px-8 relative overflow-hidden">
+        <section className="py-12 sm:py-16 md:py-20 px-4 sm:px-6 lg:px-8 relative overflow-hidden">
           <div className="absolute inset-0 bg-gradient-to-b from-surface-dark/20 via-transparent to-surface-dark/20" />
           <div className="relative max-w-[1400px] mx-auto">
-            <div className="text-center mb-16">
-              <GlassBadge variant="ice" className="mb-4 inline-flex items-center gap-2">
+            <div className="text-center mb-12 sm:mb-16 px-4">
+              <GlassBadge variant="ice" className="mb-3 sm:mb-4 inline-flex items-center gap-2 text-xs sm:text-sm">
                 <Icon name="store" size="sm" variant="ice" />
                 <span>For Shopify Stores</span>
               </GlassBadge>
-              <h2 className="text-h1 font-bold mb-4">SMS Marketing Built for Shopify</h2>
-              <p className="text-xl text-border-subtle max-w-3xl mx-auto leading-relaxed">
+              <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-3 sm:mb-4">SMS Marketing Built for Shopify</h2>
+              <p className="text-base sm:text-lg md:text-xl text-border-subtle max-w-3xl mx-auto leading-relaxed">
                 Seamlessly integrated with your Shopify store. Manage campaigns, sync customer data, 
                 and track results—all from your Shopify admin dashboard.
               </p>
             </div>
 
             {/* Screenshots Grid */}
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 sm:gap-8 mb-8 sm:mb-12">
               {shopifyScreenshots.map((screenshot, index) => (
                 <div key={index} className="group">
                   <GlassCard variant="ice" className="p-0 overflow-hidden hover:scale-[1.02] transition-all duration-300">
-                    {/* Mockup Frame */}
                     <div className="relative bg-gradient-to-b from-neutral-surface-primary to-neutral-surface-secondary p-4">
-                      {/* Browser/Device Frame */}
                       <div className="mb-3 flex items-center gap-2">
                         <div className="flex gap-1.5">
                           <div className="w-3 h-3 rounded-full bg-red-400" />
@@ -312,7 +304,6 @@ export default function Landing() {
                         </div>
                         <div className="flex-1 h-6 rounded bg-neutral-border/30" />
                       </div>
-                      {/* Screenshot */}
                       <ImageLightbox 
                         imageSrc={screenshot.src} 
                         imageAlt={screenshot.alt}
@@ -329,10 +320,9 @@ export default function Landing() {
                         />
                       </ImageLightbox>
                     </div>
-                    {/* Caption */}
-                    <div className="p-6">
-                      <h3 className="text-h3 font-semibold mb-2 text-primary-light">{screenshot.title}</h3>
-                      <p className="text-body text-border-subtle">{screenshot.description}</p>
+                    <div className="p-4 sm:p-6">
+                      <h3 className="text-lg sm:text-xl font-semibold mb-2 text-primary-light">{screenshot.title}</h3>
+                      <p className="text-sm sm:text-base text-border-subtle">{screenshot.description}</p>
                     </div>
                   </GlassCard>
                 </div>
@@ -340,7 +330,7 @@ export default function Landing() {
             </div>
 
             {/* Features Grid */}
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 mb-8 sm:mb-12">
               {shopifyFeatures.map((feature, index) => (
                 <GlassCard key={index} variant="ice" className="p-6 text-center group hover:scale-[1.02] transition-all duration-300">
                   <div className="flex justify-center mb-4">
@@ -348,8 +338,8 @@ export default function Landing() {
                       <Icon name={feature.icon} size="lg" variant="ice" />
                     </div>
                   </div>
-                  <h3 className="text-h3 font-semibold mb-2 text-primary-light">{feature.title}</h3>
-                  <p className="text-sm text-border-subtle leading-relaxed">{feature.description}</p>
+                  <h3 className="text-lg sm:text-xl font-semibold mb-2 text-primary-light">{feature.title}</h3>
+                  <p className="text-xs sm:text-sm text-border-subtle leading-relaxed">{feature.description}</p>
                 </GlassCard>
               ))}
             </div>
@@ -372,29 +362,27 @@ export default function Landing() {
         </section>
 
         {/* Retail Product Section */}
-        <section className="py-20 px-4 lg:px-8 bg-surface-dark/30 relative overflow-hidden">
-          <div className="absolute inset-0 bg-gradient-to-b from-transparent via-zoom-fuchsia/5 to-transparent" />
+        <section className="py-12 sm:py-16 md:py-20 px-4 sm:px-6 lg:px-8 bg-surface-dark/30 relative overflow-hidden">
+          <div className="absolute inset-0 bg-gradient-to-b from-transparent via-cyan-accent/5 to-transparent" />
           <div className="relative max-w-[1400px] mx-auto">
-            <div className="text-center mb-16">
-              <GlassBadge variant="fuchsia" className="mb-4 inline-flex items-center gap-2">
-                <Icon name="nfc" size="sm" variant="fuchsia" />
+            <div className="text-center mb-12 sm:mb-16 px-4">
+              <GlassBadge variant="cyan" className="mb-3 sm:mb-4 inline-flex items-center gap-2 text-xs sm:text-sm">
+                <Icon name="nfc" size="sm" variant="cyan" />
                 <span>For Retail Businesses</span>
               </GlassBadge>
-              <h2 className="text-h1 font-bold mb-4">SMS Marketing for Physical Stores</h2>
-              <p className="text-xl text-border-subtle max-w-3xl mx-auto leading-relaxed">
+              <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-3 sm:mb-4">SMS Marketing for Physical Stores</h2>
+              <p className="text-base sm:text-lg md:text-xl text-border-subtle max-w-3xl mx-auto leading-relaxed">
                 Connect online and offline experiences. Use NFC tags, opt-in forms, and location-based 
                 targeting to engage customers both in-store and online.
               </p>
             </div>
 
             {/* Screenshots Grid */}
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 sm:gap-8 mb-8 sm:mb-12">
               {retailScreenshots.map((screenshot, index) => (
                 <div key={index} className="group">
-                  <GlassCard variant="fuchsia" className="p-0 overflow-hidden hover:scale-[1.02] transition-all duration-300">
-                    {/* Mockup Frame */}
+                  <GlassCard variant="cyan" className="p-0 overflow-hidden hover:scale-[1.02] transition-all duration-300">
                     <div className="relative bg-gradient-to-b from-neutral-surface-primary to-neutral-surface-secondary p-4">
-                      {/* Browser/Device Frame */}
                       <div className="mb-3 flex items-center gap-2">
                         <div className="flex gap-1.5">
                           <div className="w-3 h-3 rounded-full bg-red-400" />
@@ -403,7 +391,6 @@ export default function Landing() {
                         </div>
                         <div className="flex-1 h-6 rounded bg-neutral-border/30" />
                       </div>
-                      {/* Screenshot */}
                       <ImageLightbox 
                         imageSrc={screenshot.src} 
                         imageAlt={screenshot.alt}
@@ -420,10 +407,9 @@ export default function Landing() {
                         />
                       </ImageLightbox>
                     </div>
-                    {/* Caption */}
-                    <div className="p-6">
-                      <h3 className="text-h3 font-semibold mb-2 text-primary-light">{screenshot.title}</h3>
-                      <p className="text-body text-border-subtle">{screenshot.description}</p>
+                    <div className="p-4 sm:p-6">
+                      <h3 className="text-lg sm:text-xl font-semibold mb-2 text-primary-light">{screenshot.title}</h3>
+                      <p className="text-sm sm:text-base text-border-subtle">{screenshot.description}</p>
                     </div>
                   </GlassCard>
                 </div>
@@ -431,16 +417,16 @@ export default function Landing() {
             </div>
 
             {/* Features Grid */}
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 mb-8 sm:mb-12">
               {retailFeatures.map((feature, index) => (
-                <GlassCard key={index} variant="fuchsia" className="p-6 text-center group hover:scale-[1.02] transition-all duration-300">
+                <GlassCard key={index} variant="cyan" className="p-6 text-center group hover:scale-[1.02] transition-all duration-300">
                   <div className="flex justify-center mb-4">
-                    <div className="p-3 rounded-xl bg-zoom-fuchsia/20 group-hover:bg-zoom-fuchsia/30 transition-colors">
-                      <Icon name={feature.icon} size="lg" variant="fuchsia" />
+                    <div className="p-3 rounded-xl bg-cyan-accent/20 group-hover:bg-cyan-accent/30 transition-colors">
+                      <Icon name={feature.icon} size="lg" variant="cyan" />
                     </div>
                   </div>
-                  <h3 className="text-h3 font-semibold mb-2 text-primary-light">{feature.title}</h3>
-                  <p className="text-sm text-border-subtle leading-relaxed">{feature.description}</p>
+                  <h3 className="text-lg sm:text-xl font-semibold mb-2 text-primary-light">{feature.title}</h3>
+                  <p className="text-xs sm:text-sm text-border-subtle leading-relaxed">{feature.description}</p>
                 </GlassCard>
               ))}
             </div>
@@ -448,7 +434,7 @@ export default function Landing() {
             {/* CTA */}
             <div className="text-center">
               <GlassButton 
-                variant="fuchsia" 
+                variant="cyan" 
                 size="lg" 
                 href={`${RETAIL_APP_URL}/retail`}
                 className="group"
@@ -463,16 +449,16 @@ export default function Landing() {
         </section>
 
         {/* Shared Features Section */}
-        <section className="py-20 px-4 lg:px-8">
+        <section className="py-12 sm:py-16 md:py-20 px-4 sm:px-6 lg:px-8">
           <div className="max-w-[1200px] mx-auto">
-            <div className="text-center mb-12">
-              <h2 className="text-h1 font-bold mb-4">Everything You Need</h2>
-              <p className="text-lg text-border-subtle max-w-2xl mx-auto">
+            <div className="text-center mb-8 sm:mb-12 px-4">
+              <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-3 sm:mb-4">Everything You Need</h2>
+              <p className="text-base sm:text-lg text-border-subtle max-w-2xl mx-auto">
                 Powerful features available in both platforms to help you create, send, and track SMS campaigns that convert.
               </p>
             </div>
             
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
               {sharedFeatures.map((feature, index) => (
                 <GlassCard key={index} className="p-6 text-center group hover:scale-[1.02] transition-all duration-300">
                   <div className="flex justify-center mb-4">
@@ -480,8 +466,8 @@ export default function Landing() {
                       <Icon name={feature.icon} size="lg" variant="ice" />
                     </div>
                   </div>
-                  <h3 className="text-h3 font-semibold mb-2 text-primary-light">{feature.title}</h3>
-                  <p className="text-sm text-border-subtle leading-relaxed">{feature.description}</p>
+                  <h3 className="text-lg sm:text-xl font-semibold mb-2 text-primary-light">{feature.title}</h3>
+                  <p className="text-xs sm:text-sm text-border-subtle leading-relaxed">{feature.description}</p>
                 </GlassCard>
               ))}
             </div>
@@ -489,43 +475,43 @@ export default function Landing() {
         </section>
 
         {/* Platform Comparison Section */}
-        <section className="py-20 px-4 lg:px-8 bg-surface-dark/30">
+        <section className="py-12 sm:py-16 md:py-20 px-4 sm:px-6 lg:px-8 bg-surface-dark/30">
           <div className="max-w-[1200px] mx-auto">
-            <div className="text-center mb-12">
-              <h2 className="text-h1 font-bold mb-4">Choose Your Platform</h2>
-              <p className="text-lg text-border-subtle max-w-2xl mx-auto">
+            <div className="text-center mb-8 sm:mb-12 px-4">
+              <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-3 sm:mb-4">Choose Your Platform</h2>
+              <p className="text-base sm:text-lg text-border-subtle max-w-2xl mx-auto">
                 Astronote works for both Shopify stores and retail businesses. Pick the platform that fits your needs.
               </p>
             </div>
             
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8">
               {/* Shopify Card */}
-              <GlassCard variant="ice" className="p-8 text-center group hover:scale-[1.02] transition-all duration-300">
-                <div className="flex justify-center mb-6">
-                  <div className="p-4 rounded-xl bg-ice-accent/20 group-hover:bg-ice-accent/30 transition-colors">
+              <GlassCard variant="ice" className="p-6 sm:p-8 text-center group hover:scale-[1.02] transition-all duration-300">
+                <div className="flex justify-center mb-4 sm:mb-6">
+                  <div className="p-3 sm:p-4 rounded-xl bg-ice-accent/20 group-hover:bg-ice-accent/30 transition-colors">
                     <Icon name="store" size="xl" variant="ice" />
                   </div>
                 </div>
-                <h3 className="text-h2 font-semibold mb-3 text-primary-light">Shopify Stores</h3>
-                <p className="text-body text-border-subtle leading-relaxed mb-6">
+                <h3 className="text-2xl sm:text-3xl font-semibold mb-2 sm:mb-3 text-primary-light">Shopify Stores</h3>
+                <p className="text-sm sm:text-base text-border-subtle leading-relaxed mb-4 sm:mb-6">
                   Perfect for e-commerce stores on Shopify. Seamless integration with your store data, products, and customers.
                 </p>
-                <ul className="space-y-3 mb-8 text-left">
+                <ul className="space-y-2 sm:space-y-3 mb-6 sm:mb-8 text-left">
                   <li className="flex items-start gap-3">
                     <Icon name="check" size="sm" variant="ice" className="mt-1 flex-shrink-0" />
-                    <span className="text-sm text-border-subtle">Automatic customer sync</span>
+                    <span className="text-xs sm:text-sm text-border-subtle">Automatic customer sync</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <Icon name="check" size="sm" variant="ice" className="mt-1 flex-shrink-0" />
-                    <span className="text-sm text-border-subtle">Storefront opt-in forms</span>
+                    <span className="text-xs sm:text-sm text-border-subtle">Storefront opt-in forms</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <Icon name="check" size="sm" variant="ice" className="mt-1 flex-shrink-0" />
-                    <span className="text-sm text-border-subtle">Discount code integration</span>
+                    <span className="text-xs sm:text-sm text-border-subtle">Discount code integration</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <Icon name="check" size="sm" variant="ice" className="mt-1 flex-shrink-0" />
-                    <span className="text-sm text-border-subtle">Embedded admin dashboard</span>
+                    <span className="text-xs sm:text-sm text-border-subtle">Embedded admin dashboard</span>
                   </li>
                 </ul>
                 <GlassButton 
@@ -542,41 +528,41 @@ export default function Landing() {
               </GlassCard>
 
               {/* Retail Card */}
-              <GlassCard variant="fuchsia" className="p-8 text-center group hover:scale-[1.02] transition-all duration-300 relative">
+              <GlassCard variant="cyan" className="p-6 sm:p-8 text-center group hover:scale-[1.02] transition-all duration-300 relative">
                 <div className="absolute -top-3 left-1/2 -translate-x-1/2 z-10">
-                  <GlassBadge variant="fuchsia" className="text-xs font-semibold">
+                  <GlassBadge variant="cyan" className="text-xs font-semibold">
                     Physical Stores
                   </GlassBadge>
                 </div>
-                <div className="flex justify-center mb-6 mt-4">
-                  <div className="p-4 rounded-xl bg-zoom-fuchsia/20 group-hover:bg-zoom-fuchsia/30 transition-colors">
-                    <Icon name="nfc" size="xl" variant="fuchsia" />
+                <div className="flex justify-center mb-4 sm:mb-6 mt-4">
+                  <div className="p-3 sm:p-4 rounded-xl bg-cyan-accent/20 group-hover:bg-cyan-accent/30 transition-colors">
+                    <Icon name="nfc" size="xl" variant="cyan" />
                   </div>
                 </div>
-                <h3 className="text-h2 font-semibold mb-3 text-primary-light">Retail Businesses</h3>
-                <p className="text-body text-border-subtle leading-relaxed mb-6">
+                <h3 className="text-2xl sm:text-3xl font-semibold mb-2 sm:mb-3 text-primary-light">Retail Businesses</h3>
+                <p className="text-sm sm:text-base text-border-subtle leading-relaxed mb-4 sm:mb-6">
                   Perfect for physical retail stores. NFC tags, opt-in forms, and in-store conversion tracking.
                 </p>
-                <ul className="space-y-3 mb-8 text-left">
+                <ul className="space-y-2 sm:space-y-3 mb-6 sm:mb-8 text-left">
                   <li className="flex items-start gap-3">
-                    <Icon name="check" size="sm" variant="fuchsia" className="mt-1 flex-shrink-0" />
-                    <span className="text-sm text-border-subtle">NFC tag integration</span>
+                    <Icon name="check" size="sm" variant="cyan" className="mt-1 flex-shrink-0" />
+                    <span className="text-xs sm:text-sm text-border-subtle">NFC tag integration</span>
                   </li>
                   <li className="flex items-start gap-3">
-                    <Icon name="check" size="sm" variant="fuchsia" className="mt-1 flex-shrink-0" />
-                    <span className="text-sm text-border-subtle">In-store opt-in forms</span>
+                    <Icon name="check" size="sm" variant="cyan" className="mt-1 flex-shrink-0" />
+                    <span className="text-xs sm:text-sm text-border-subtle">In-store opt-in forms</span>
                   </li>
                   <li className="flex items-start gap-3">
-                    <Icon name="check" size="sm" variant="fuchsia" className="mt-1 flex-shrink-0" />
-                    <span className="text-sm text-border-subtle">Visit confirmation tracking</span>
+                    <Icon name="check" size="sm" variant="cyan" className="mt-1 flex-shrink-0" />
+                    <span className="text-xs sm:text-sm text-border-subtle">Visit confirmation tracking</span>
                   </li>
                   <li className="flex items-start gap-3">
-                    <Icon name="check" size="sm" variant="fuchsia" className="mt-1 flex-shrink-0" />
-                    <span className="text-sm text-border-subtle">Conversion analytics</span>
+                    <Icon name="check" size="sm" variant="cyan" className="mt-1 flex-shrink-0" />
+                    <span className="text-xs sm:text-sm text-border-subtle">Conversion analytics</span>
                   </li>
                 </ul>
                 <GlassButton 
-                  variant="fuchsia" 
+                  variant="cyan" 
                   size="lg" 
                   href={`${RETAIL_APP_URL}/retail`}
                   className="w-full group"
@@ -592,41 +578,42 @@ export default function Landing() {
         </section>
 
         {/* Final CTA Section */}
-        <section className="py-24 px-4 bg-gradient-to-b from-surface-dark to-bg-dark relative overflow-hidden">
+        <section className="py-16 sm:py-20 md:py-24 px-4 sm:px-6 bg-gradient-to-b from-surface-dark to-bg-dark relative overflow-hidden">
           <div className="absolute inset-0">
-            <div className="absolute top-0 left-1/4 w-96 h-96 bg-ice-accent/10 rounded-full blur-3xl animate-float" />
-            <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-zoom-fuchsia/10 rounded-full blur-3xl animate-float" style={{ animationDelay: '2s' }} />
+            <div className="absolute top-0 left-1/4 w-64 h-64 sm:w-96 sm:h-96 bg-ice-accent/10 rounded-full blur-3xl animate-float" />
+            <div className="absolute bottom-0 right-1/4 w-64 h-64 sm:w-96 sm:h-96 bg-cyan-accent/10 rounded-full blur-3xl animate-float" style={{ animationDelay: '2s' }} />
           </div>
           <div className="relative max-w-[800px] mx-auto text-center">
-            <h2 className="text-h1 md:text-6xl font-bold mb-6">Ready to Grow Your Business?</h2>
-            <p className="text-xl text-border-subtle mb-10 leading-relaxed">
-              Join thousands of businesses using Astronote to increase sales with SMS marketing.
+            <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 sm:mb-6 px-4">Ready to Grow Your Business?</h2>
+            <p className="text-base sm:text-lg md:text-xl text-border-subtle mb-6 sm:mb-10 leading-relaxed px-4">
+              Start using SMS marketing to reach customers instantly, drive sales, and grow faster. 
+              Choose the platform that fits your business.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center mb-6">
+            <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center mb-4 sm:mb-6 px-4">
               <GlassButton 
                 variant="primary" 
                 size="lg" 
                 href={`${SHOPIFY_APP_URL}/shopify`}
-                className="group"
+                className="group w-full sm:w-auto"
               >
-                <span className="flex items-center gap-2">
+                <span className="flex items-center justify-center gap-2">
                   For Shopify Stores
                   <Icon name="arrowRight" size="sm" className="group-hover:translate-x-1 transition-transform" />
                 </span>
               </GlassButton>
               <GlassButton 
-                variant="fuchsia" 
+                variant="cyan" 
                 size="lg" 
                 href={`${RETAIL_APP_URL}/retail`}
-                className="group"
+                className="group w-full sm:w-auto"
               >
-                <span className="flex items-center gap-2">
+                <span className="flex items-center justify-center gap-2">
                   For Retail Businesses
                   <Icon name="arrowRight" size="sm" className="group-hover:translate-x-1 transition-transform" />
                 </span>
               </GlassButton>
             </div>
-            <p className="text-sm text-border-subtle">No credit card required • Free trial available • 98% open rates</p>
+            <p className="text-xs sm:text-sm text-border-subtle px-4">No credit card required • Free trial available • 98% open rates</p>
           </div>
         </section>
       </main>

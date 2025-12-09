@@ -13,6 +13,7 @@ const Icon = memo(function Icon({ name, className, size = 'md', variant = 'defau
     default: 'text-primary-light',
     ice: 'text-ice-accent',
     fuchsia: 'text-zoom-fuchsia',
+    cyan: 'text-cyan-accent',
     accent: 'text-ice-accent',
   };
 

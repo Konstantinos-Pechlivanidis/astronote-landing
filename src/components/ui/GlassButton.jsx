@@ -15,6 +15,7 @@ export default function GlassButton({
     primary: 'glass-button-primary shadow-glow-ice-light hover:shadow-glow-ice-light-lg',
     ghost: 'glass-button-ghost bg-transparent',
     fuchsia: 'glass-button-fuchsia shadow-glow-fuchsia-light',
+    cyan: 'glass-button-cyan shadow-glow-cyan-light',
   };
   
   const sizeClasses = {

@@ -56,6 +56,14 @@
     box-shadow: 0 4px 16px rgba(192, 157, 174, 0.15), 0 1px 4px rgba(192, 157, 174, 0.10);
   }
   
+  .glass-cyan {
+    background: rgba(2, 2, 2, 0.35);
+    backdrop-filter: blur(24px);
+    -webkit-backdrop-filter: blur(24px);
+    border: 1px solid rgba(6, 182, 212, 0.20);
+    box-shadow: 0 4px 16px rgba(6, 182, 212, 0.15), 0 1px 4px rgba(6, 182, 212, 0.10);
+  }
+  
   .glass-dark {
     background: rgba(2, 2, 2, 0.30);
     backdrop-filter: blur(24px);
@@ -158,6 +166,15 @@
     background-color: #B08A9D;
   }
   
+  .glass-button-cyan {
+    background-color: #06B6D4;
+    color: #020202;
+  }
+  
+  .glass-button-cyan:hover {
+    background-color: #0891B2;
+  }
+  
   /* GlassCard - Dark Mode (default for public pages) */
   .glass-card-default {
     background-color: transparent;
@@ -175,6 +192,10 @@
   .shadow-glow-fuchsia-light {
     box-shadow: 0 0 20px rgba(192, 157, 174, 0.35);
   }
+  
+  .shadow-glow-cyan-light {
+    box-shadow: 0 0 20px rgba(6, 182, 212, 0.35);
+  }
 
   /* GlassBadge - Dark Mode (default for public pages) */
   .glass-badge-default,
@@ -188,6 +209,12 @@
     background-color: rgba(192, 157, 174, 0.20);
     color: #C09DAE;
     border-color: rgba(192, 157, 174, 0.40);
+  }
+  
+  .glass-badge-cyan {
+    background-color: rgba(6, 182, 212, 0.20);
+    color: #06B6D4;
+    border-color: rgba(6, 182, 212, 0.40);
   }
 }
 

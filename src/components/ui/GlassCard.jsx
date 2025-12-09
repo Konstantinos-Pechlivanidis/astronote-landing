@@ -15,6 +15,7 @@ const GlassCard = forwardRef(({
     default: 'glass-card-default',
     ice: 'glass-ice',
     fuchsia: 'glass-fuchsia',
+    cyan: 'glass-cyan',
     dark: 'glass-dark',
   };
 

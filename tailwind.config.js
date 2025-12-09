@@ -40,6 +40,12 @@ export default {
         'zoom-fuchsia': '#C09DAE',
         'zoom-fuchsia-deep': '#7C5A67',
         
+        // Retail - Cyan Colors (for retail sections)
+        'cyan-accent': '#06B6D4', // Tailwind cyan-500
+        'cyan-light': '#67E8F9', // Tailwind cyan-300
+        'cyan-dark': '#0891B2', // Tailwind cyan-600
+        'cyan-soft': '#CFFAFE', // Tailwind cyan-100
+        
         // Dark Mode - Surface Colors (legacy)
         'surface-dark': '#191819',
         'surface-mid': '#262425',
@@ -59,6 +65,7 @@ export default {
         'glass-dark': 'rgba(2, 2, 2, 0.30)',
         'glass-ice': 'rgba(153, 181, 215, 0.20)',
         'glass-fuchsia': 'rgba(192, 157, 174, 0.22)',
+        'glass-cyan': 'rgba(6, 182, 212, 0.20)',
         'glass-border': 'rgba(148, 169, 180, 0.30)',
       },
       fontFamily: {

@@ -13,6 +13,7 @@ const GlassBadge = memo(function GlassBadge({
     default: 'glass-badge-default',
     fuchsia: 'glass-badge-fuchsia',
     ice: 'glass-badge-ice',
+    cyan: 'glass-badge-cyan',
   };
 
   return (

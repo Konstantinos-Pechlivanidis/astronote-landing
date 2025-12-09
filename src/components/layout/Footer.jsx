@@ -3,7 +3,7 @@ const RETAIL_APP_URL = import.meta.env.VITE_RETAIL_APP_URL || 'https://astronote
 
 export default function Footer() {
   return (
-    <footer className="border-t border-glass-border/30 bg-gradient-to-b from-surface-dark/50 to-primary-dark py-16 px-4 sm:px-6 lg:px-8">
+    <footer className="border-t border-glass-border/30 bg-gradient-to-b from-surface-dark/50 to-primary-dark backdrop-blur-[20px] py-16 px-4 sm:px-6 lg:px-8">
       <div className="max-w-[1400px] mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 mb-12">
           {/* Brand */}
@@ -27,7 +27,7 @@ export default function Footer() {
                 <span>98% open rates</span>
               </div>
               <div className="flex items-center gap-2">
-                <span className="w-2 h-2 rounded-full bg-zoom-fuchsia animate-pulse" style={{ animationDelay: '1s' }} />
+                <span className="w-2 h-2 rounded-full bg-cyan-accent animate-pulse" style={{ animationDelay: '1s' }} />
                 <span>Instant delivery</span>
               </div>
             </div>
@@ -91,7 +91,7 @@ export default function Footer() {
               <li>
                 <a 
                   href={`${RETAIL_APP_URL}/retail`} 
-                  className="text-sm text-border-subtle hover:text-zoom-fuchsia transition-colors inline-flex items-center gap-2 group"
+                  className="text-sm text-border-subtle hover:text-cyan-accent transition-colors inline-flex items-center gap-2 group"
                 >
                   Get Started
                   <svg className="w-3 h-3 opacity-0 group-hover:opacity-100 group-hover:translate-x-1 transition-all" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -102,7 +102,7 @@ export default function Footer() {
               <li>
                 <a 
                   href={`${RETAIL_APP_URL}/retail/login`} 
-                  className="text-sm text-border-subtle hover:text-zoom-fuchsia transition-colors inline-flex items-center gap-2 group"
+                  className="text-sm text-border-subtle hover:text-cyan-accent transition-colors inline-flex items-center gap-2 group"
                 >
                   Login
                   <svg className="w-3 h-3 opacity-0 group-hover:opacity-100 group-hover:translate-x-1 transition-all" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -113,7 +113,7 @@ export default function Footer() {
               <li>
                 <a 
                   href={`${RETAIL_APP_URL}/retail/pricing`} 
-                  className="text-sm text-border-subtle hover:text-zoom-fuchsia transition-colors inline-flex items-center gap-2 group"
+                  className="text-sm text-border-subtle hover:text-cyan-accent transition-colors inline-flex items-center gap-2 group"
                 >
                   Pricing
                   <svg className="w-3 h-3 opacity-0 group-hover:opacity-100 group-hover:translate-x-1 transition-all" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -124,7 +124,7 @@ export default function Footer() {
               <li>
                 <a 
                   href={`${RETAIL_APP_URL}/retail/features`} 
-                  className="text-sm text-border-subtle hover:text-zoom-fuchsia transition-colors inline-flex items-center gap-2 group"
+                  className="text-sm text-border-subtle hover:text-cyan-accent transition-colors inline-flex items-center gap-2 group"
                 >
                   Features
                   <svg className="w-3 h-3 opacity-0 group-hover:opacity-100 group-hover:translate-x-1 transition-all" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -187,8 +187,9 @@ export default function Footer() {
           </div>
         </div>
 
+        {/* Copyright & GDPR Warning */}
         <div className="pt-8 border-t border-glass-border/30">
-          <div className="flex flex-col md:flex-row justify-between items-center gap-4">
+          <div className="flex flex-col md:flex-row justify-between items-center gap-4 mb-4">
             <p className="text-sm text-border-subtle text-center md:text-left">
               © {new Date().getFullYear()} Astronote. All rights reserved.
             </p>
@@ -198,6 +199,17 @@ export default function Footer() {
                 Built with ❤️ for businesses
               </span>
             </div>
+          </div>
+          <div className="text-center text-xs text-border-subtle/80 space-y-1">
+            <p>
+              <strong>Important:</strong> You are solely responsible for GDPR compliance and adherence to our terms of service.
+            </p>
+            <p>
+              Failure to comply with GDPR regulations or our application's terms results in <strong>full liability on your part.</strong>
+            </p>
+            <p className="mt-2">
+              Please review our <a href={`${SHOPIFY_APP_URL}/shopify/gdpr`} className="text-ice-accent hover:underline">GDPR Policy</a>, <a href={`${SHOPIFY_APP_URL}/shopify/terms`} className="text-ice-accent hover:underline">Terms of Service</a>, and <a href={`${SHOPIFY_APP_URL}/shopify/privacy`} className="text-ice-accent hover:underline">Privacy Policy</a> for complete details.
+            </p>
           </div>
         </div>
       </div>
